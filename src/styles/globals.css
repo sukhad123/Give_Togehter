@@ -1,0 +1,22 @@
+/* in src/index.css or src/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-futura: var(--font-futura);
+  
+  /* Color palette */
+  --color-red: #D51C29;
+  --color-blue: #709AD1;
+  --color-orange: #FF921D;
+  --color-teal: #70B8B7;
+  --color-darkGray: #231F20;
+  --color-mediumGray: #606060;
+  --color-lightGray: #C4C4C4;
+  --color-offWhite:#FFF5DB;
+  --font-heading: "Urbanist", sans-serif;
+  
+}
+
+@config "../../tailwind.config.js"
