@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Navbar as HeroUINavbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarMenuToggle,
-  NavbarMenu,
-} from "@heroui/navbar";
+import { Navbar as HeroUINavbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu } from "@heroui/navbar";
 
 export const BrandLogo = () => {
   return <img src="/logo/Logo.svg" alt="Brand Logo" style={{ height: 40 }} />;
@@ -15,11 +9,8 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <nav className="px-2 py-7">
-      <HeroUINavbar
-        onMenuOpenChange={setIsMenuOpen}
-        className="block w-full rounded-full  bg-red/[0.46]"
-      >
+    <nav className="px-2 py-5">
+      <HeroUINavbar onMenuOpenChange={setIsMenuOpen} className="block w-full rounded-full  bg-red/[0.46]">
         <NavbarContent justify="start">
           <NavbarBrand>
             <BrandLogo />

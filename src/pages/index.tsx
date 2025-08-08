@@ -1,10 +1,12 @@
- 
 import DefaultLayout from "@/layouts/default";
+import { Hero } from "@/components/hero";
+import Legends from "@/components/legends";
 
 export default function IndexPage() {
   return (
     <DefaultLayout>
-     <section>This is the landing page currently ongoing</section>
+      <Hero />
+      <Legends />
     </DefaultLayout>
   );
 }
