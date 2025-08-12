@@ -22,7 +22,7 @@ const Legends = () => {
   ];
 
   return (
-    <div className="w-full bg-white py-16 px-4">
+    <div className="w-full  py-16 px-4">
       <div className="w-full mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#231F20]">
           Three Easy Steps to Be a Life-Saving Legend!
