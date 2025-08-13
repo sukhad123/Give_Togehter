@@ -1,5 +1,3 @@
-
-
 const Footer = () => {
   return (
     <div className="bg-[#D51C29] py-12 text-white">
