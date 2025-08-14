@@ -4,7 +4,7 @@ import Legends from "@/components/legends";
 import Carousel from "@/components/carousel";
 import Social from "@/components/social";
 
-export default function IndexPage() {
+export default function LandingPage() {
   return (
     <DefaultLayout>
       <Hero />
