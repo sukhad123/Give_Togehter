@@ -1,6 +1,6 @@
 import DefaultLayout from "@/layouts/default";
 import IntroFrame from "@/components/introFrame";
-import Carousel from "@/components/carousel";
+
 
 export default function ContactPage() {
   return (
