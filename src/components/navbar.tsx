@@ -22,7 +22,7 @@ export function Navbar() {
     { name: "About Us", href: "/about", icon: "/icons/about.svg" },
     { name: "Contact Us", href: "/contact", icon: "/icons/contact.svg" },
     { name: "FAQs", href: "/faq", icon: "/icons/faq.svg" },
-    { name: "Blogs & News", href: "#", icon: "/icons/blog.svg" },
+    { name: "Landing", href: "/landing", icon: "/icons/blog.svg" },
   ];
 
   return (

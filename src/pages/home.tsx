@@ -1,5 +1,10 @@
 import DefaultLayout from "@/layouts/default";
 import IntroFrame from "@/components/introFrame";
+import Message from "@/components/message";
+import ThingsToKnow from "@/components/thingsToKnow";
+import EligibilityCta from "@/components/eligibilityCta";
+import DonorStories from "@/components/donorStories";
+import Download from "@/components/download";
 
 export default function Home() {
   return (
@@ -9,6 +14,11 @@ export default function Home() {
         description="How do you plan to save lives today?"
         media={<img src="/index/home.png" alt="Home" className="w-[60%] h-[60%]" />}
       />
+      <Message />
+      <ThingsToKnow />
+      <EligibilityCta />
+      <DonorStories />
+      <Download color="bg-[#709AD1]" />
     </DefaultLayout>
   );
 }
