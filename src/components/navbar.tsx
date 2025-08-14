@@ -1,61 +1,67 @@
 import React from "react";
-import { Navbar as HeroUINavbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu } from "@heroui/navbar";
+import {
+  Navbar as HeroUINavbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+} from "@heroui/navbar";
 
 export const BrandLogo = () => {
-  return <img src="/logo/Logo.svg" alt="Brand Logo" style={{ height: 40 }} />;
+  return <img src="/logo/LogoWhite.svg" alt="Brand Logo" style={{ height: 40 }} />;
 };
+
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  const menuItems = [
+    { name: "Home", href: "/", icon: "/icons/home.svg" },
+    { name: "About Us", href: "/about", icon: "/icons/about.svg" },
+    { name: "Contact Us", href: "/contact", icon: "/icons/contact.svg" },
+    { name: "FAQs", href: "/faq", icon: "/icons/faq.svg" },
+    { name: "Blogs & News", href: "#", icon: "/icons/blog.svg" },
+  ];
+
   return (
     <nav className="px-2 py-5">
-      <HeroUINavbar onMenuOpenChange={setIsMenuOpen} className="block w-full rounded-full  bg-red/[0.46]">
+      <HeroUINavbar onMenuOpenChange={setIsMenuOpen} className="block w-full rounded-full bg-[#D51C29] pl-5">
         <NavbarContent justify="start">
           <NavbarBrand>
-            <BrandLogo />
+            <Link to="/landing">
+              <BrandLogo />
+            </Link>
           </NavbarBrand>
         </NavbarContent>
 
-        <NavbarContent className=" hidden sm:flex gap-4" justify="center">
-          {/*Add Items for navbar as we grow */}
+        <NavbarContent className="sm:flex gap-15" justify="center">
+          {menuItems.map((item, index) => (
+            <Link
+              to={item.href}
+              key={`${item.name}-${index}`}
+              className="flex items-center gap-2 text-white font-semibold"
+            >
+              <img src={item.icon} className="h-5 w-5" />
+              <span>{item.name}</span>
+            </Link>
+          ))}
         </NavbarContent>
+
         <NavbarContent justify="end">
-          {/**Add the contents later */}
-          <NavbarMenuToggle
-            icon={
-              isMenuOpen ? undefined : (
-                <div className="flex flex-col gap-1">
-                  <div className="w-5 h-0.5 bg-[#FFF5DB]"></div>
-                  <div className="w-5 h-0.5 bg-[#FFF5DB]"></div>
-                  <div className="w-5 h-0.5 bg-[#FFF5DB]"></div>
-                </div>
-              )
-            }
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden border border-white   rounded-full w-9 h-9"
-          />
+          <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="sm:hidden text-white" />
         </NavbarContent>
-        <NavbarMenu>
-          {/* {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                className="w-full"
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === menuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
-                size="lg"
-              >
-                {item}
+
+        <NavbarMenu className="bg-[#D51C29] bg-opacity-80 mt-2 rounded-xl">
+          {menuItems.map((item, index) => (
+            <NavbarMenuItem key={`${item.name}-${index}`}>
+              <Link to={item.href} className="w-full flex items-center gap-4 text-white py-2">
+                <img src={item.icon} alt={`${item.name} icon`} className="h-6 w-6" />
+                <span className="text-lg font-semibold">{item.name}</span>
               </Link>
             </NavbarMenuItem>
-          ))} */}
+          ))}
         </NavbarMenu>
       </HeroUINavbar>
     </nav>

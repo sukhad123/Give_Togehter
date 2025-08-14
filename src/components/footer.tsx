@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-[#D51C29] py-12 text-white">
+    <div className="bg-[#D51C29] pt-12 text-white">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="w-full md:w-1/2">
           <img src="/index/footer.png" alt="GiveBlood App on phones" className="w-full h-auto" />
