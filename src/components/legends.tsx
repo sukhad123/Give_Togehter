@@ -1,5 +1,3 @@
-
-
 const Legends = () => {
   const steps = [
     {
@@ -22,8 +20,8 @@ const Legends = () => {
   ];
 
   return (
-    <div className="w-full  py-16 px-4">
-      <div className="w-full mx-auto">
+    <div className="w-[80%] mx-auto py-16">
+      <div className="w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#231F20]">
           Three Easy Steps to Be a Life-Saving Legend!
         </h2>
@@ -46,33 +44,31 @@ const Legends = () => {
         </div>
 
         {/* Story Section */}
-        <div className="container mx-auto px-4 mb-24">
-          <div className="w-11/12 mx-auto">
-            <div className="space-y-12">
-              <div>
-                <h3 className="text-4xl font-bold text-[#231F20] mb-6">The GiveTogether Story</h3>
-                <p className="text-[#606060] text-lg mb-6">
-                  GiveTogether is a student-led initiative dedicated to encouraging blood and plasma donation among
-                  Canadian post-secondary students. In partnership with Canadian Blood Services, we promote the
-                  GiveBlood app to make the donation process simple and approachable. Our goal is to inspire students to
-                  come together, support their communities, and contribute to life-saving efforts.
+        <div className="mb-5 mx-10">
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-4xl font-bold text-[#231F20] mb-6">The GiveTogether Story</h3>
+              <p className="text-[#606060] text-lg mb-6">
+                GiveTogether is a student-led initiative dedicated to encouraging blood and plasma donation among
+                Canadian post-secondary students. In partnership with Canadian Blood Services, we promote the GiveBlood
+                app to make the donation process simple and approachable. Our goal is to inspire students to come
+                together, support their communities, and contribute to life-saving efforts.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-white py-6 px-10 rounded-2xl">
+                <h4 className="text-3xl font-bold text-[#D51C29] mb-3">Our Mission</h4>
+                <p className="text-[#606060] text-lg">
+                  Students inspiring students to save lives through blood and plasma donation
                 </p>
               </div>
-
-              <div className="space-y-6">
-                <div className="bg-white py-6 rounded-2xl">
-                  <h4 className="text-3xl font-bold text-[#D51C29] mb-3">Our Mission</h4>
-                  <p className="text-[#606060] text-lg">
-                    Students inspiring students to save lives through blood and plasma donation
-                  </p>
-                </div>
-                <div className="bg-white py-6 rounded-2xl">
-                  <h4 className="text-3xl font-bold text-[#709AD1] mb-3">Our Vision</h4>
-                  <p className="text-[#606060] text-lg">
-                    To create a movement where every student feels empowered and motivated to donate blood or plasma,
-                    reducing shortages and saving lives across Canada
-                  </p>
-                </div>
+              <div className="bg-white py-6 px-10 rounded-2xl">
+                <h4 className="text-3xl font-bold text-[#709AD1] mb-3">Our Vision</h4>
+                <p className="text-[#606060] text-lg">
+                  To create a movement where every student feels empowered and motivated to donate blood or plasma,
+                  reducing shortages and saving lives across Canada
+                </p>
               </div>
             </div>
           </div>
