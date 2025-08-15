@@ -16,11 +16,11 @@ const StoryCard = () => (
 
     <div className="mt-6 flex items-center gap-3">
       <div className="w-9 h-9 rounded-full bg-white/20 overflow-hidden flex items-center justify-center">
-        <img src="/logo/LogoWhite.svg" alt="avatar" className="w-6 h-6" />
+        <img src="/logo/profile.png" alt="avatar" className="w-full h-full" />
       </div>
       <div>
-        <p className="text-sm font-semibold">Suhana Shrestha</p>
-        <p className="text-xs opacity-90">Chair, GiveTogether</p>
+        <p className="text-xl font-semibold text-[#FF921D]">Suhana Shrestha</p>
+        <p className=" text-black text-normal opacity-90 font-normal">Chair, GiveTogether</p>
       </div>
     </div>
   </div>
@@ -31,7 +31,9 @@ const DonorStories = () => {
     <section className="bg-offWhite py-12">
       <div className="w-[80%] mx-auto">
         <h3 className="text-2xl md:text-3xl font-extrabold text-[#231F20] text-center">Donor Stories</h3>
-        <p className="text-[#606060] text-center mt-2">Hear what our donors have to share about their experience donating in partnership with GiveTogether</p>
+        <p className="text-[#606060] text-center mt-2">
+          Hear what our donors have to share about their experience donating in partnership with GiveTogether
+        </p>
 
         <div className="flex justify-center gap-3 mt-4">
           <button className="w-8 h-8 rounded-full bg-[#D9E6FF] flex items-center justify-center">

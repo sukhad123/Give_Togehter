@@ -29,8 +29,8 @@ export default function FAQ() {
       {/* Content */}
       <section className="py-12 px-6">
         <div className="container mx-auto text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-semibold">Everything you need to know</h2>
-          <p className="text-base text-default-600 mt-2">Quick topics for you to learn more</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold">Everything you need to know</h2>
+          <p className="text-xl text-default-600 mt-2 font-semibold">Quick topics for you to learn more</p>
         </div>
 
         <div className="container mx-auto px-4">
@@ -76,8 +76,8 @@ export default function FAQ() {
 
           {/* CTA */}
           <div className="mt-12 text-center">
-            <h3 className="text-2xl font-semibold text-red-600">Still want to ask us questions?</h3>
-            <p className="text-sm text-default-600 my-4 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-red-600">Still want to ask us questions?</h3>
+            <p className="text-normal text-default-600 my-4 max-w-4xl mx-auto font-semibold">
               Let's find out! Depending on your responses to the following questions, you may be able to donate as of
               today.
             </p>
@@ -101,10 +101,12 @@ function TopicItem({ color, title, description }: { color: string; title: string
       <div className={`flex items-center justify-center w-14 h-14 rounded-full ${color} flex-shrink-0`}></div>
       <div className="flex-1">
         <div className="flex items-center justify-between">
-          <h4 className="text-lg font-semibold">{title}</h4>
-          <span className="text-2xl text-default-400">›</span>
+          <h4 className="text-xl font-semibold">{title}</h4>
+          <span className="text-2xl text-default-400">
+            <img src="/arrow.png" className="w-7 h-7" />
+          </span>
         </div>
-        <p className="text-sm text-default-600 mt-2">{description}</p>
+        <p className="text-sm text-default-600 mt-2 font-semibold">{description}</p>
       </div>
     </div>
   );
