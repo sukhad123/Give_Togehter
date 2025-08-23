@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="w-[85%] mx-auto py-10">
         {/* Top: Logo */}
         <div className="pb-6 border-b border-white/20">
-          <img src="/logo/LogoWhite.svg" alt="Give Together" className="size-1/9" />
+          <img src="/logo/LogoWhite.svg" alt="Give Together" className="w-32 sm:w-48 md:w-56 h-auto" />
         </div>
 
         {/* Middle: Link columns */}
