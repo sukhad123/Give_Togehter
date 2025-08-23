@@ -12,7 +12,7 @@ export default function Home() {
       <IntroFrame
         title="How do you plan to save lives today?"
         description="How do you plan to save lives today?"
-        media={<img src="/index/home.png" alt="Home" className="w-[60%] h-[60%]" />}
+        media={<img src="/index/home.png" alt="Home" className="w-full h-auto object-cover" />}
       />
       <Message />
       <ThingsToKnow />
