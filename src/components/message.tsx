@@ -3,7 +3,7 @@ const Message = () => {
     <div className="w-[80%] mx-auto mb-12">
       <div className="space-y-12">
         <div>
-          <h3 className="text-4xl font-bold text-[#231F20] mb-6">Our Message</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-[#231F20] mb-6">Our Message</h3>
           <p className="text-[#231F20] text-lg font-semibold leading-7 mb-6 opacity-80">
             GiveTogether is a student-led initiative dedicated to encouraging blood and plasma donation among Canadian
             post-secondary students. In partnership with Canadian Blood Services, we promote the GiveBlood app to make
